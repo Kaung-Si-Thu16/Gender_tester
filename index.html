@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gay Tester (Gadar)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="input-group">
+                    <span class="input-group-text" id="name">Name</span>
+                    <input type="text" required aria-label="First name" id="checkbox" class="form-control">
+                  </div>
+            </div>
+
+            <div class="mt-5" id="gender">
+                <span class="input-group-text d-inline">Gender</span>
+
+                <input type="radio" name="gender" value="male" required class="form-check-input gender ms-3" id="mobile-label">
+                <label for="male" class="form-check-label pe-5" id="mobile-label">Male</label>
+                
+                <input type="radio" name="gender" value="female" required class="form-check-input gender">
+                <label for="female" class="form-check-label pe-5" id="mobile-label">Female</label>
+
+                <input type="radio" name="gender" value="gay" id="gay" required class="form-check-input gender">
+                <label for="gay" class="form-check-label">Other (obviously gay)</label>
+            </div>
+
+            <div class="mt-5">
+                <span class="input-group-text d-inline">You're interested in</span>
+
+                <input type="radio" required name="likes" id="men" value="men" class="form-check-input ms-3">
+                <label for="men" id="mobile-label" class="pe-3">Men</label>
+
+                <input type="radio" required name="likes" id="women" value="women" class="form-check-input">
+                <label for="women" class="pe-3">Women</label>
+
+                <input type="radio" required name="likes" id="both" value="both" class="form-check-input">
+                <label for="both" class="pe-3">Both</label>
+
+                <input type="radio" required name="likes" id="animals" value="animals" class="form-check-input">
+                <label for="animals" class="pe-3">Animals</label>
+
+                <input type="radio" required name="likes" id="pans" value="pans" class="form-check-input">
+                <label for="pans" class="pe-3">Pans</label>
+            </div>
+
+            <button onclick="test()" class="btn btn-success text-center d-block mt-5 ms-auto me-auto">Let's See Your Sexuality</button>
+        </form>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
